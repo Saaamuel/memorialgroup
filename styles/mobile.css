@@ -61,13 +61,13 @@ ELEMENTOS DO HEADER
 
 
 /* ------------- menu hamburger ------------ */
-/*
-header nav#nav-esquerda{
+
+/*header nav#nav-esquerda{
     justify-content: space-between;
 }
 
 header nav#nav-esquerda ul#icone-menu{
-    display: flex;
+    display: none;
 }
 
 header nav#nav-esquerda ul#icone-menu li#menuX{
