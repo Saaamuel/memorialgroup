@@ -1,0 +1,485 @@
+/*
+CORES
+#D99A4E
+#F2C791
+#BF5D24
+#402313
+#8C5230
+
+#A63348
+#D96A93
+#F2994B
+#F2D9D0
+#8C2A14
+
+font-family: "Zalando Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 4px 6px #000;
+    font-weight: 700;
+    font-size: max(44px, 5.2vw);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 6px #464646;
+    font-weight: 700;
+    font-size: max(20px, 2.8vw);
+}
+
+/* ------------ BOTAO CHAMADA ----------- */
+
+div.chamada a{
+    font-size: max(16px, 1.8vw);
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    border-radius: 50px;
+    font-weight: 600;
+    background: linear-gradient(rgb(56, 43, 5) 0%, rgb(114, 114, 113) 50%, rgb(2, 3, 92) 100% );
+
+    display: inline-block;
+
+    animation-name: HeaderA-moverParaCima;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+    transition: .3s ease-in-out;
+}
+
+div.chamada a:hover{
+    opacity: .8;
+}
+
+
+/*
+ELEMENTOS DO HEADER
+*/
+
+header{
+    max-width: 100%;
+    height: 90vh;
+    background: url('../images/LOGO\ COMPLETO.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+/*------------navebar-----------*/
+
+header nav#nav-esquerda{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+
+header nav#nav-esquerda div#logo{
+    max-width: 100px;
+    max-height: 120px;
+    margin-left: 5rem;
+}
+
+header nav#nav-esquerda div#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* --------------- menu hamburger ------------*/
+
+header nav#nav-esquerda ul#icone-menu{
+    display: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esquerda ul#icone-menu li ion-icon{
+    font-size: 50px;
+    color: #fff;
+    margin-right: 2rem;
+}
+
+
+/* ------------- menu principal ---------------*/
+
+header nav#nav-esquerda ul.menu-principal{
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    text-shadow: 4px 6px 10px #000;
+    padding-bottom: 10px;
+    transition: .3s ease-in-out;
+}
+
+header nav#nav-esquerda ul.menu-principal li a:hover{
+   opacity: .6;
+   border-bottom: 1px solid #fff;
+}
+
+/* ---------- CHAMADA ------------- */
+
+header div.chamada{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header div.chamada h1{
+    color: #fff;
+
+    animation-name: HeaderH1-moverParaDireita;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+header div.chamada h2{
+    color: #dededf;
+
+    margin-bottom: 20px;
+
+    animation-name: HeaderH2-moverParaEsquerda;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
+}
+
+
+/* ---------- SOBRE ------------- */
+
+section.sobre{
+    max-width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+section.sobre div.sobre-mestre{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+section.sobre div.sobre-mestre img{
+    border: 2px solid #000;
+}
+
+/* ---------- PRODUTOS E SERVIÇOS ------------- */
+
+section.solucao{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+
+    background-color: rgb(191, 191, 192);
+}
+
+section.solucao h2{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    max-width: 950px;
+    text-align: center;
+    color: #070707;
+    font-size: max(22px, 2.8vw);
+}
+
+section.solucao div.solucao-mestre{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto{
+    max-width: 1200px;
+    text-align: left;
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto p{
+    width: 95%;
+    margin: auto;
+    color: #000;
+    text-shadow: 2px 2px 5px #353434;
+    font-size: max(16px, 1vw);
+}
+
+section.solucao div.solucao-mestre div.solucao-img{
+    max-width: 900px;
+}
+
+section.solucao div.solucao-mestre div.solucao-img img{
+    max-width: 100%;
+}
+
+
+/* ---------- PRODUTOS ------------- */
+
+section.produtos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+section.produtos h2{
+    margin-top: 2px;
+    margin-bottom: 50px;
+    max-width: 850px;
+    font-size: max(22px, 2.8vw);
+    text-align: center;
+    color: #000;
+}    
+
+section.produtos div.produtos-container{
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.produtos div.chamada{
+    margin-top: 40px;
+    margin-bottom: 50;
+}
+
+
+/* ---------- FOOTER ------------- */
+
+footer{
+    width: 100%;
+    background-color: #0a0035;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.logo-footer{
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+}
+
+footer div.footer-container div.logo-footer img{
+    max-width: 100%;
+}
+
+footer div.footer-container div.footer-info{
+    width: 70%;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 110%;
+    
+    transition: .3s ease-out;
+}
+
+footer div.footer-container div.footer-info nav.nav-footer ul li a:hover{
+    border: 2px solid #000;
+}
+
+footer div.footer-container div.footer-info div.cartoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.footer-container div.footer-info div.cartoes span{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: max(16px, 1.5vw);
+    margin-top: 15px;
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes{
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+}
+
+footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes img{
+    max-width: 100%;
+}
+
+footer div.endereco p{    
+    color: #fff;    
+    font-size: max(15px, .8vw);
+    margin-top: 30px;
+}
+
+footer div.endereco p.texto{
+    text-align: right;
+}
+
+footer span.autorais{
+    color: #fff;
+    font-size: max(14px, .8vw);
+    margin-top: 40px;
+}
+
+
+/*redes sociais*/
+
+footer section.redesSociais ul{
+    list-style-type: none;
+
+    display: flex;
+
+    position: relative;
+
+    gap: 40px;
+}
+
+footer section.redesSociais ul li{
+    width: 80px;
+
+    height: 80px;
+
+    background-color: #fff;
+    box-shadow: 0 8px 25px #00000052;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    transition: 2s;
+}
+
+footer section.redesSociais ul li:hover{
+    width: 180px;
+
+}
+
+footer section.redesSociais ul li span{
+    position: absolute;
+}
+
+footer section.redesSociais ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;
+
+    transition: .2s;
+}
+
+footer section.redesSociais ul li .text{
+    color: #fff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+
+footer section.redesSociais ul li:hover .text{
+    transform: scale(1);
+}
+
+footer section.redesSociais ul li:hover .icon{
+    transform: scale(0);
+}
+
+footer section.redesSociais ul li::before{
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+}
+
+footer section.redesSociais ul li:hover::before{
+    opacity: 1;
+}
+
+

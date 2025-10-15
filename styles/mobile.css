@@ -1,0 +1,103 @@
+/*
+CORES
+#D99A4E
+#F2C791
+#BF5D24
+#402313
+#8C5230
+
+#A63348
+#D96A93
+#F2994B
+#F2D9D0
+#8C2A14
+
+font-family: "Zalando Sans", sans-serif;
+font-family: "Roboto", sans-serif;
+*/
+
+/*
+ELEMENTOS DO HEADER
+*/
+/*
+@media screen and (max-width: 1200px) {
+    header{
+        background: url('../images/LOGO\ COMPLETOm.jpeg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        background: url('../images/LOGO\ COMPLETOp.jpeg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    } 
+}
+
+
+
+/* ------------ navebar -------------*/
+
+/*
+@media screen and (max-width: 1100px) {
+    header nav#nav-esquerda ul.menu-principal li a{
+        font-size: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 970px) {
+    header nav#nav-esquerda div#logo{
+        margin-left: 1rem;
+    }
+    
+}
+
+
+/* ------------- menu hamburger ------------ */
+/*
+header nav#nav-esquerda{
+    justify-content: space-between;
+}
+
+header nav#nav-esquerda ul#icone-menu{
+    display: flex;
+}
+
+header nav#nav-esquerda ul#icone-menu li#menuX{
+    display: none;
+}
+
+/* ------------- menu principal --------------- */
+/*
+header nav#nav-esquerda ul.menu-principal{
+    flex-direction: column;
+    width: 80%;
+    height: 70vh;
+    flex-direction: column;
+    background: linear-gradient(rgba(69,133,140) 0%, rgba(54,176,224) 45%, rgba(217,43,4) 100%);
+    padding-top: .5rem;
+
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    z-index: 999;
+
+    display: none;
+}
+
+header nav#nav-esquerda ul.menu-principal li{
+    margin: .5rem;
+}
+
+header nav#nav-esquerda ul.menu-principal li a{
+    font-size: 120%;
+}
+
+
