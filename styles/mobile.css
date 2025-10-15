@@ -103,102 +103,20 @@ header nav#nav-esquerda ul.menu-principal li a{
 
 /* --------- novo mobile ------------ */
 
-/* === Estilo base === */
-header {
-  /*background: #fff;*/
-  color: #000;
-  padding: 10px 20px;
-}
+/* === MENU MOBILE === */
 
-#nav-esquerda {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-#logo img {
-  width: 120px;
-}
-
-/* Ícones do menu (hamburger e X) */
-#icone-menu {
-  list-style: none;
-  display: none; /* some em desktop */
-  cursor: pointer;
-}
-
-#icone-menu li {
-  font-size: 2rem;
-}
-
-/* Menu principal */
-.menu-principal {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu-principal li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-}
-
-.menu-principal li a:hover {
-  color: #007bff;
-}
-
-/* Chamada */
-.chamada {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.chamada a {
-  display: inline-block;
-  background: #007bff;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.chamada a:hover {
-  background: #0056b3;
-}
-
-/* === Responsividade === */
 @media (max-width: 768px) {
-  #icone-menu {
-    display: block; /* aparece o ícone no mobile */
-  }
-
-  #menuX {
-    display: none;
-  }
-
-  .menu-principal {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
-    align-items: center;
-    display: none; /* escondido por padrão */
-    padding: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  .menu-principal.active {
-    display: flex; /* exibe quando ativo */
-  }
-
-  .menu-principal li {
-    margin: 10px 0;
-  }
+    header {
+        background-image: url('../images/logo_medio.jpeg');
+        height: 60vh; /* ajustar altura para mobile */
+    }
 }
 
-
+@media (max-width: 480px) {
+    header {
+        background-image: url('../images/logo_peq.jpeg');
+        height: 50vh;
+    }
+}
 
