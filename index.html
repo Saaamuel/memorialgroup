@@ -295,5 +295,24 @@
     
     <script src="./scripts/script.js"></script>
     <script src="./scripts/animacao.js"></script>
+
+    <script>
+        const menu = document.getElementById("menu");
+        const menuX = document.getElementById("menuX");
+        const menuPrincipal = document.querySelector(".menu-principal");
+
+        menu.addEventListener("click", () => {
+        menuPrincipal.classList.add("active");
+        menu.style.display = "none";
+        menuX.style.display = "block";
+        });
+
+        menuX.addEventListener("click", () => {
+        menuPrincipal.classList.remove("active");
+        menu.style.display = "block";
+        menuX.style.display = "none";
+        });
+    </script>
+
 </body>
 </html>
