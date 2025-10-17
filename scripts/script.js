@@ -1,17 +1,29 @@
-const menu = document.getElementById('menu');
-const menuX = document.getElementById('menuX');
-const menuPrincipal = document.querySelector('.menu-principal');
+// ativando menu mobile
 
-// Abre menu
-menu.addEventListener('click', () => {
-    menuPrincipal.classList.add('active');
-    menu.style.display = 'none';
-    menuX.style.display = 'block';
-});
+function mostraMenu(){
+    $('header nav#nav-esq ul.menu-principal').css('display', 'flex');
+    $('nav#nav-esquerda ul.menu-principal').addClass('animate__animated animate__fadeInRight animate__slow');
 
-// Fecha menu
-menuX.addEventListener('click', () => {
-    menuPrincipal.classList.remove('active');
-    menu.style.display = 'block';
-    menuX.style.display = 'none';
-});
+    $('header nav#nav-esq ul#icone-menu li#menu').css('display', 'none');
+    $('header nav#nav-esq ul#icone-menu li#menuX').css('display', 'flex');
+}
+
+function esconderMenu(){
+
+    $('header nav#nav-esq ul.menu-principal').css('display', 'none');
+
+    $('header nav#nav-esq ul#icone-menu li#menu').css('display', 'flex');
+    $('header nav#nav-esq ul#icone-menu li#menuX').css('display', 'none');
+}
+
+let controle = true;
+
+$('header nav#nav-esq ul#icone-menu').click(function(){
+    if(controle == true){
+        mostraMenu();
+        controle = false;
+    }else{
+        esconderMenu();
+        controle = true;
+    }
+})

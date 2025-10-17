@@ -1,23 +1,3 @@
-/*
-CORES
-#D99A4E
-#F2C791
-#BF5D24
-#402313
-#8C5230
-
-#A63348
-#D96A93
-#F2994B
-#F2D9D0
-#8C2A14
-
-font-family: "Zalando Sans", sans-serif;
-font-family: "Roboto", sans-serif;
-*/
-
-
-
 *{
     padding: 0;
     margin: 0;
@@ -41,7 +21,7 @@ h2{
 /* ------------ BOTAO CHAMADA ----------- */
 
 div.chamada a{
-    font-size: max(16px, 1.8vw);
+    font-size: max(14px, 1.8vw);
     color: #fff;
     text-decoration: none;
     padding: 20px 80px;
@@ -81,7 +61,7 @@ header{
 
 /*------------navebar-----------*/
 
-header nav#nav-esquerda{
+header nav#nav-esq{
     width: 100%;
     height: 150px;
 
@@ -91,28 +71,28 @@ header nav#nav-esquerda{
     /*justify-content: space-between;*/
 }
 
-header nav#nav-esquerda div#logo{
+header nav#nav-esq div#logo{
     max-width: 100px;
     max-height: 120px;
     margin-left: 5rem;
 }
 
-header nav#nav-esquerda div#logo img{
+header nav#nav-esq div#logo img{
     max-width: 100%;
     max-height: 100%;
 }
 
 /* --------------- menu hamburger ------------*/
 
-header nav#nav-esquerda ul#icone-menu{
+header nav#nav-esq ul#icone-menu{
     display: none;
 }
 
-header nav#nav-esquerda ul#icone-menu li{
+header nav#nav-esq ul#icone-menu li{
     list-style: none;
 }
 
-header nav#nav-esquerda ul#icone-menu li ion-icon{
+header nav#nav-esq ul#icone-menu li ion-icon{
     font-size: 50px;
     color: #fff;
     margin-right: 2rem;
@@ -121,26 +101,28 @@ header nav#nav-esquerda ul#icone-menu li ion-icon{
 
 /* ------------- menu principal ---------------*/
 
-header nav#nav-esquerda ul.menu-principal{
+header nav#nav-esq ul.menu-principal{
     margin-left: 5rem;
+
+    display: flex;
     flex-flow: row wrap;
 }
 
-header nav#nav-esquerda ul.menu-principal li{
+header nav#nav-esq ul.menu-principal li{
     list-style: none;
     margin-right: 2rem;
 }
 
-header nav#nav-esquerda ul.menu-principal li a{
+header nav#nav-esq ul.menu-principal li a{
     text-decoration: none;
     color: #fff;
-    font-size: 110%;
+    font-size: 120%;
     text-shadow: 4px 6px 10px #000;
     padding-bottom: 10px;
     transition: .3s ease-in-out;
 }
 
-header nav#nav-esquerda ul.menu-principal li a:hover{
+header nav#nav-esq ul.menu-principal li a:hover{
    opacity: .6;
    border-bottom: 1px solid #fff;
 }
@@ -391,17 +373,15 @@ footer div.footer-container div.footer-info div.cartoes div.footer-img-cartoes i
 footer div.endereco p{    
     color: #fff;    
     font-size: max(15px, .8vw);
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-footer div.endereco p.texto{
-    text-align: right;
-}
+
 
 footer span.autorais{
     color: #fff;
     font-size: max(14px, .8vw);
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 
@@ -414,15 +394,15 @@ footer section.redesSociais ul{
 
     position: relative;
 
-    gap: 40px;
+    gap: 30px;
 }
 
 footer section.redesSociais ul li{
-    width: 80px;
+    width: 15px;
 
-    height: 80px;
+    height: 15px;
 
-    background-color: #fff;
+    /* background-color: #fff; */
     box-shadow: 0 8px 25px #00000052;
     border-radius: 60px;
 
@@ -436,7 +416,7 @@ footer section.redesSociais ul li{
 }
 
 footer section.redesSociais ul li:hover{
-    width: 180px;
+    width: 80px;
 
 }
 
@@ -446,14 +426,14 @@ footer section.redesSociais ul li span{
 
 footer section.redesSociais ul li .icon{
     color: #ccc;
-    font-size: 2.2em;
+    font-size: 1.5em;
 
     transition: .2s;
 }
 
 footer section.redesSociais ul li .text{
     color: #fff;
-    font-size: 20px;
+    font-size: 10px;
     transform: scale(0);
     transition: .2s;
     transition-delay: .1s;
@@ -482,34 +462,6 @@ footer section.redesSociais ul li:hover::before{
 }
 
 
-/* ----------- MENU PRINCIPAL ----------- */
-.menu-principal {
-    list-style: none;
-    gap: 2rem;
-    margin-left: auto;
-    margin-right: 5rem;
-}
-
-@media (min-width: 769px) {
-    .menu-principal {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-    }
-}
-
-
-.menu-principal li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: 0.3s;
-}
-
-.menu-principal li a:hover {
-    color: #00aaff;
-}
 
 
 
